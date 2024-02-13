@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root{
+    --main : #1A5883;
+    --font : #5b5b5b;
+    --border : #2a2929;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    display: grid;
+    gap: 20px;
+    align-content: start;
+    justify-content: center;
+    height: 100vh;
+
+}
+.container{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    width: 900px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.title h1{
+    font-weight: 700;
+    color: #F28121;
+}
+.title h1 span{
+    color: var(--main);
+}
+.title img{
+    height: 90px;
+    width: 110px;
+}
+.input-info{
+    display: grid;
+    gap: 10px;
+}
+.input-info input{
+    padding: 5px 5px 5px 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--font);
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    width: 100%;
+}
+.input-info input::placeholder{
+    padding: 2px;
+    color: #a3a3a3;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+.input-info label{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.input-info button{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--main);
+    color: #fff;
+    margin-top: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.input-info button:hover{
+    filter: brightness(125%);
+}
+.input-info button:active{
+    outline: 2px solid #000080;
+}
+table{
+    border-collapse: collapse;
+}
+.book-list thead th{
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-top: 10px;
+    padding: 4px;
+    width: 30%;
+}
+.book-list tbody td{
+    text-align: center;
+    padding: 6px;
+    font-size: 18px;
+    width: 30%;
+}
+.book-list tbody tr:nth-child(odd){
+    background-color: #ccc;
+}
+svg{
+    width: 18px;
+    height: 18px;
+    fill: crimson;
+    cursor: pointer;
+}
+.trash:active{
+    transition: 0.3s;
+    transform: scale(90%);
+}

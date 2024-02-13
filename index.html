@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <img src="img/book.png" alt="book">
+            <h1><span>Book </span>List</h1>
+        </div>
+        <section>
+            <form class="input-info">
+                <div>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div>
+                    <label for="author">Author</label>
+                    <input type="text" id="author" required>
+                </div>
+                <div>
+                    <label for="year">Year</label>
+                    <input type="number" maxlength="4" max="2024" min="1000" id="year" title="between 1000 - 2024" placeholder="2024" required>
+                </div>
+                <div>
+                    <button type="submit">Add Book</button>
+                </div>
+            </form>
+        </section>
+        <table class="book-list">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody>
+            <!--add book-->
+            </tbody>
+        </table>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
